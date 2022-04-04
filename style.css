@@ -1,0 +1,11 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+html {
+    box-sizing: border-box;
+    background:grey;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
