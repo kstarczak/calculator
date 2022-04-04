@@ -1,11 +1,50 @@
 * {
     padding: 0;
     margin: 0;
-}
+  }
 html {
     box-sizing: border-box;
-    background:grey;
   }
 *, *:before, *:after {
     box-sizing: inherit;
   }
+.container {
+    width: 500px;
+    height: 700px;
+    margin: 100px auto;
+    background-color: grey;
+    border: 5px solid black;
+    border-radius: 20px;
+    position: relative;
+}
+.screen {
+    width: 400px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+.buttons {
+    width: 400px;
+    position: absolute;
+    top: 190px;
+    left: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.buttons div{
+    width:90px;
+    height: 90px;
+    margin-top: 12px;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 20px;
+    font-size: 32px;
+    text-align: center;
+    padding: 20px 0;
+}
