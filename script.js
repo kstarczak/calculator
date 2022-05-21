@@ -25,7 +25,9 @@ function multiply(a, b) {
 }
 
 
-buttons.forEach((button) => { button.addEventListener('click', clickButton)});
+buttons.forEach((button) => {button.addEventListener('click', clickButton)});
+//buttons.forEach((button) => {button.addEventListener('click', pressDown)});
+//buttons.forEach((button) => {button.addEventListener('transitonend', removeTransition)});
 
 
 function clickButton(e) {
@@ -61,9 +63,18 @@ function clickButton(e) {
         } else {
             b += e.target.id;
             screen.textContent = a+operator+b;
-        }
-    }
-    }
+        };
+    };
+};
+
+function pressDown(e) {
+    e.target.classList.add('depressed');
+}
+
+function removeTransition(e) {
+    if (e.propertyName !== 'transform') return;
+    e.target.remove('depressed');
+};
         
         
 function clearAll() {
