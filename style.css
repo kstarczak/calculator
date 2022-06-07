@@ -25,6 +25,7 @@ html {
     top: 50px;
     left: 50px;
     background-color: rgb(231, 231, 231);
+    color: rgb(89, 88, 88);
     border: 2px solid rgb(175, 173, 173);
     border-radius: 10px;
     box-shadow: inset 2px 2px 6px rgb(85, 84, 84);
@@ -54,25 +55,72 @@ html {
     padding: 20px 0;
     transition: all 0.3s;
 }
-.depressed {
-    transform: translateY()
-}
-.depressed {
-    transform: translateY(3px);
-    box-shadow: none;
-}
 .buttons div:hover{
     transform: translateY(-3px);
-    box-shadow: 1px 2px 4px rgb(88, 88, 88);
+    box-shadow: 1px 3px 5px rgb(78, 78, 78);
 }
 #color {
     width: 193px;
     font-size: 20px;
     padding: 25px 0;
 }
-
-#clear {
+#equals {
     width: 193px;
-    background-color: rgb(241, 155, 75);
-    font-size: 28px;
+	font-size: 38px;
+}
+#clear {
+	background-color: rgb(189, 127, 61);
+}
+
+/* dark-mode:
+body {
+	background-color: #373737;
+}
+.container {
+	width: 500px;
+	height: 760px;
+	margin: 100px auto;
+	background-color: rgb(3, 34, 20);
+	border: 1px solid rgb(6, 6, 6);
+	border-radius: 20px;
+	box-shadow: 5px 5px 10px rgb(0, 0, 0);
+	position: relative;
+}
+.buttons div {
+	width: 86px;
+	height: 86px;
+	margin-top: 12px;
+	background-color: rgb(12, 83, 53);
+	color: #d9d382;
+	border-radius: 20px;
+	font-size: 32px;
+	text-align: center;
+	padding: 20px 0;
+	transition: all 0.3s;
+}
+.buttons div:hover {
+	transform: translateY(-3px);
+	box-shadow: 1px 3px 5px rgb(0, 0, 0);
+}
+.screen {
+	width: 400px;
+	height: 100px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background-color: rgb(126, 128, 67);
+	color: rgb(66, 0, 0);
+	border: 2px solid rgb(9, 8, 8);
+	border-radius: 10px;
+	box-shadow: inset 2px 2px 6px rgb(9, 9, 9);
+	font-size: 32px;
+	padding: 20px;
+	text-align: right;
+}
+#equals {
+    width: 193px;
+	font-size: 38px;
+}
+#clear {
+	background-color: rgb(81, 27, 14);
 }

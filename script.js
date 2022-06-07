@@ -26,9 +26,6 @@ function multiply(a, b) {
 
 
 buttons.forEach((button) => {button.addEventListener('click', clickButton)});
-//buttons.forEach((button) => {button.addEventListener('click', pressDown)});
-//buttons.forEach((button) => {button.addEventListener('transitonend', removeTransition)});
-
 
 function clickButton(e) {
     //dark mode toggle
@@ -66,16 +63,6 @@ function clickButton(e) {
         };
     };
 };
-
-function pressDown(e) {
-    e.target.classList.add('depressed');
-}
-
-function removeTransition(e) {
-    if (e.propertyName !== 'transform') return;
-    e.target.remove('depressed');
-};
-        
         
 function clearAll() {
     a = null;
