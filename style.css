@@ -54,11 +54,11 @@ html {
     font-size: 32px;
     text-align: center;
     padding: 20px 0;
-    transition: all 0.3s;
+    transition: transform 0.2s, box-shadow 0.1s;
 }
 .buttons div:hover{
     transform: translateY(-3px);
-    box-shadow: 1px 3px 5px rgb(78, 78, 78);
+    box-shadow: 2px 4px 6px rgb(83, 83, 83);
 }
 #color {
     width: 193px;
@@ -97,7 +97,6 @@ body.dark {
 	font-size: 32px;
 	text-align: center;
 	padding: 20px 0;
-	transition: all 0.3s;
 }
 .buttons.dark div:hover {
 	transform: translateY(-3px);
