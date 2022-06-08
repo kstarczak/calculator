@@ -54,7 +54,7 @@ html {
     font-size: 32px;
     text-align: center;
     padding: 20px 0;
-    transition: transform 0.2s, box-shadow 0.1s;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
 .buttons div:hover{
     transform: translateY(-3px);
