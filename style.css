@@ -8,6 +8,9 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
   }
+body {
+    background-color: rgb(231, 231, 231);
+}
 .container {
     width: 500px;
     height: 760px;
@@ -123,4 +126,23 @@ body.dark {
 }
 .dark#clear {
 	background-color: rgb(81, 27, 14);
+}
+footer {
+    position: absolute;
+    Bottom: 0;
+    width: 100vw;
+    padding: 1rem;
+    color: rgb(201, 198, 198);
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    font-size: 20px;
+}
+footer>a{
+    color: inherit;
+    text-decoration: none;
+    transition-duration: all 200ms;
+}
+footer>a:hover{
+    color:rgb(245, 188, 33);
+    font-weight: 500;
 }
