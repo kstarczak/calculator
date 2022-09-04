@@ -4,7 +4,7 @@ let b;
 let operator;
 
 (() => {
-    const buttons = document.querySelectorAll(".buttons div");
+    const buttons = document.querySelectorAll(".button");
     buttons.forEach((button) => {button.addEventListener('click', clickButton) 
     });
 })();
@@ -27,7 +27,7 @@ const calculator = (function () {
 
 
 function changeColor(e) {
-    const colorElements  =  document.querySelectorAll('body, .container, .buttons, .screen, #equals, #clear');
+    const colorElements  =  document.querySelectorAll('body, .calculator, .buttons, .screen, #equals, #clear');
     if (e.target.dataset.color === 'light') {
         colorElements.forEach((element) => element.classList.add('dark'));
         e.target.dataset.color = 'dark';
@@ -58,7 +58,7 @@ function clickButton(e) {
             operate();
             a = screen.textContent;
         }
-    } else if (e.target.className === 'operation') {
+    } else if (e.target.classList.contains('operation')) {
         if (!a||a==='.') {
             clearAll();
             screen.textContent = "ERROR: no value entered";
@@ -87,6 +87,8 @@ function clickButton(e) {
             screen.textContent = a + operator + b;
         }
     }
+    console.log(`a is equal to: ${a}`);
+    console.log(`b is equal to: ${b}`);
 }
 
 
