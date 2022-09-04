@@ -27,7 +27,7 @@ const calculator = (function () {
 
 
 function changeColor(e) {
-    const colorElements  =  document.querySelectorAll('body, .calculator, .buttons, .screen, #equals, #clear');
+    const colorElements  =  document.querySelectorAll('body, .calculator, .button, .screen');
     if (e.target.dataset.color === 'light') {
         colorElements.forEach((element) => element.classList.add('dark'));
         e.target.dataset.color = 'dark';

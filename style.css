@@ -76,11 +76,6 @@ body {
     -webkit-user-select: none;
     user-select: none;
 }
-
-.button:hover{
-    transform: translateY(-3px);
-    box-shadow: 2px 4px 6px rgb(83, 83, 83);
-}
 #clear {
 	background-color: rgb(189, 127, 61);
 }
@@ -101,13 +96,10 @@ body.dark {
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-.buttons.dark div {
+.button.dark {
 	background-color: rgb(12, 83, 53);
 	color: #d9d382;
-}
-.buttons.dark div:hover {
-	transform: translateY(-3px);
-	box-shadow: 1px 3px 5px rgb(0, 0, 0);
+    box-shadow: 1px 3px 5px rgb(0, 0, 0);
 }
 .screen.dark {
 	background-color: rgb(126, 128, 67);
@@ -118,7 +110,16 @@ body.dark {
 .dark#clear {
 	background-color: rgb(81, 27, 14);
 }
+
+.button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0px 0px 10px 3px rgb(221, 114, 13);
+}
+
 footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100vw;
     padding: 0.5rem;
     color: rgb(201, 198, 198);
